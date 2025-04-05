@@ -1,142 +1,148 @@
-/* Reset dasar */
+z/* Reset dasar */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
 }
 
 /* Header */
 header {
-    background-color: #333;
-    padding: 1rem 0;
+  background-color: #333;
+  padding: 1rem 0;
 }
-.logo{
-    width: 70px;
-    height: 70px;
-    position: absolute;
+.logo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
 }
 .logo-kiri {
-    left: 130px;
-    top: 0px;
+  left: 130px;
+  top: 20px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
 }
 
 nav ul li {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
 
 .cta-btn {
-    background-color: white;
-    color: #4CAF50;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
+  background-color: white;
+  color: #4caf50;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .cta-btn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 /* Produk Section */
 .product-section {
-    padding: 50px 20px;
-    text-align: center;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .product-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
 }
 
 .product-card img {
-    width: 100%;
-    border-radius: 8px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .product-card h3 {
-    margin: 20px 0 10px;
+  margin: 20px 0 10px;
 }
 
 .product-card p {
-    color: #555;
+  color: #555;
 }
 
 .buy-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .buy-btn:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 /* Kontak Section */
 .contact-section {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 30px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 922px) {
+  .logo,
+  .logo-kiri {
+    left: 0px;
+  }
 }
