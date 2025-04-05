@@ -1,7 +1,7 @@
 // Contoh script untuk interaktivitas (misalnya animasi atau pop-up)
 document.querySelectorAll(".buy-btn").forEach((button) => {
   button.addEventListener("click", () => {
-    alert("Produk berhasil dipesan!");
+    alert("Produk berhasil dipesan dan mohon untuk melanjutkan di WhatsApp Yaa!");
   });
 });
 const src = ScrollReveal({
