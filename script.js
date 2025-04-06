@@ -1,7 +1,38 @@
-// Contoh script untuk interaktivitas (misalnya animasi atau pop-up)
-document.querySelectorAll(".buy-btn").forEach((button) => {
-  button.addEventListener("click", () => {
-    alert("Produk berhasil dipesan dan mohon untuk melanjutkan di WhatsApp Yaa!");
+// Handle Beli Sekarang button clicks
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all Beli Sekarang buttons
+  const buyButtons = document.querySelectorAll(".buy-btn");
+  const popupModal = document.getElementById("popupModal");
+  const closeBtn = document.querySelector(".popup-close-btn");
+
+  // Add click event to each button
+  buyButtons.forEach((button) => {
+    button.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent default link behavior
+
+      // Get the WhatsApp URL from the parent link
+      const whatsappUrl = this.parentElement.getAttribute("href");
+
+      // Show the popup
+      popupModal.style.display = "flex";
+
+      // After 3 seconds, redirect to WhatsApp
+      setTimeout(() => {
+        window.location.href = whatsappUrl;
+      }, 3000);
+    });
+  });
+
+  // Close button functionality
+  closeBtn.addEventListener("click", function () {
+    popupModal.style.display = "none";
+  });
+
+  // Close modal when clicking outside
+  popupModal.addEventListener("click", function (e) {
+    if (e.target === popupModal) {
+      popupModal.style.display = "none";
+    }
   });
 });
 const src = ScrollReveal({
